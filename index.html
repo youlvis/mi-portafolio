@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg position-fixed">
+        <div class=" container">
+            <a class="navbar-brand" href="#" onclick="closeNav()">
+                < Youlvis />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item" data-target="#sidenav-collapse-main" data-toggle="collapse">
+                        <a class="nav-link" href="#inicio" onclick="closeNav()">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremi" onclick="closeNav()">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" onclick="closeNav()">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#curriculum" onclick="closeNav()">CURRICULUM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" onclick="closeNav()">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" onclick="closeNav()">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <h1>Youlvis Jimenez</h1>
+            <span>Ingeniero de Software...</span>
+            <div class="redes">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/youlvis-jimenez-06681b244/" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="container">
+            <h2>Sobre Mí</h2>
+            <div class="row">
+                <div class="col-5 personalData">
+                    <ul>
+                        <li>
+                            <strong>Nombre Completo</strong>
+                            <span>Youlvis Jose Jimenez Peñate</span>
+                        </li>
+                        <li>
+                            <strong>Edad</strong>
+                            <span> 24 años</span>
+                        </li>
+                        <li>
+                            <strong>Numero de Celular</strong>
+                            <span>3106514629</span>
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            <span>jimenezyoulvis@gmail.com</span>
+                        </li>
+                        <li>
+                            <strong>Cargo Actual</strong>
+                            <span class="underline">Ingeniero de Software</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-7 description">
+                    <h3>Hola, soy <span>Youlvis Jimenez.</span></h3>
+                    <div class="contenedor-intereses">
+                        <p>Estudiante de Ingeniería de Sistemas y Computación de
+                            décimo semestre,
+                            apasionado por la programación y el saber constante, dispone de alto manejo del lenguaje de
+                            programación
+                            Java, con inclinaciones por el desarrollo y diseño de páginas web y aplicativos móviles
+                            (Android). Se
+                            caracteriza por tener pensamientos creativos y positivos, con gran capacidad para adaptarse
+                            a diversos
+                            entornos sociales y culturales.</p>
+
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-success">Descargar CV</button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TypeScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SpringBoot</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>NodeJs</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactivo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Autodidacto</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachiller</h4>
+                        <span class="casa">Institución Educativa Simón Bolívar</span>
+                        <span class="fecha">2010 - 2016</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Profesional - Ingeneria de Sistemas y Computación</h4>
+                        <span class="casa">Universidad EIA</span>
+                        <span class="fecha">2017 - En curso</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Estudios complementarios</h3>
+                    <div class="item izq">
+                        <h4>Semillero de investigación - Design Thinking</h4>
+                        <span class="casa">Universidad EIA</span>
+                        <span class="fecha">2018</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Bancolombia</span>
+                        <span class="fecha">2022 - En curso</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <h3>Reconocimientos y Distinciones</h3>
+                    <div class="item der">
+                        <h4>Ser pilo paga 3</h4>
+                        <span class="casa">Ministerio de Educación Nacional</span>
+                        <span class="fecha">2016</span>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/proyectolol.png" alt="">
+                    <div class="overlay">
+                        <h3>League of Legends</h3>
+                        <p>fullstack web project</p>
+                        <div> <a class="bi bi-github" href="https://github.com/youlvis/leagueOfLegends"
+                                target="_blank"></a>
+                            <a class="bi bi-play-circle" href="https://github.com/youlvis/leagueOfLegends"
+                                target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyectoRk.png" alt="">
+                    <div class="overlay">
+                        <h3>Reconocimiento Facial Mascotas</h3>
+                        <p>fullstack web project</p>
+                        <div> <a class="bi bi-github" href="https://github.com/youlvis/facial_recognition_pets_frontend"
+                                target="_blank"></a>
+                            <a class="bi bi-play-circle" href="https://github.com/youlvis/leagueOfLegends"
+                                target="_blank"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+
+            <!-- Formulario -->
+            <div class="col">
+                <input type="text" placeholder="Tú Nombre">
+                <input type="text" placeholder="Número telefónico">
+                <input type="text" placeholder="Dirección de correo">
+                <input type="text" placeholder="Tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+            <!-- Mapa -->
+            <!-- <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
