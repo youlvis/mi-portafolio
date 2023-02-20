@@ -2,27 +2,27 @@ function closeNav() {
     const menuToggle = document.getElementById('navbarSupportedContent')
         .className = "navbar-collapse collapse"
 }
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades() {
+
+function effectSkills() {
     var skills = document.getElementById("skills");
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if (distancia_skills >= 300) {
-        let habilidades = document.getElementsByClassName("progreso");
-        habilidades[0].classList.add("htmlcss");
-        habilidades[1].classList.add("javascript");
-        habilidades[2].classList.add("typescript");
-        habilidades[3].classList.add("java");
-        habilidades[4].classList.add("angular");
-        habilidades[5].classList.add("springboot");
-        habilidades[6].classList.add("nodejs");
-        habilidades[7].classList.add("comunicacion");
-        habilidades[8].classList.add("trabajoEquipo");
-        habilidades[9].classList.add("proactivo");
-        habilidades[10].classList.add("creatividad");
-        habilidades[11].classList.add("autodidacto");
+    var distanceSkills = window.innerHeight - skills.getBoundingClientRect().top;
+    if (distanceSkills >= 300) {
+        let skills = document.getElementsByClassName("progreso");
+        skills[0].classList.add("htmlcss");
+        skills[1].classList.add("javascript");
+        skills[2].classList.add("typescript");
+        skills[3].classList.add("java");
+        skills[4].classList.add("angular");
+        skills[5].classList.add("springboot");
+        skills[6].classList.add("nodejs");
+        skills[7].classList.add("comunicacion");
+        skills[8].classList.add("trabajoEquipo");
+        skills[9].classList.add("proactivo");
+        skills[10].classList.add("creatividad");
+        skills[11].classList.add("autodidacto");
     }
 }
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
+
 window.onscroll = function () {
-    efectoHabilidades();
+    effectSkills();
 } 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,69 +8,6 @@
     margin: 0;
     padding: 0;
 }
-
-html {
-    /* me permite deslizar cuando hago clic en los links del menu */
-    /* scroll-behavior: smooth; */
-}
-
-/* MENU */
-/* .contenedor-header {
-    background: #ff9100;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-.contenedor-header header {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-}
-
-.contenedor-header header .logo a {
-    font-family: 'Righteous';
-    font-size: 36px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.contenedor-header header .logo a:hover {
-    color: #2f3c4fb0;
-}
-
-.contenedor-header header ul {
-    display: flex;
-    list-style: none;
-}
-
-.contenedor-header header nav ul li a {
-    text-align: none;
-    color: #fff;
-    margin: 0 15px;
-    padding: 3px;
-    transition: .5s;
-    text-decoration: none;
-}
-
-.contenedor-header header nav ul li a:hover {
-    color: #2f3c4f;
-} */
-
-/* .nav-responsive {
-    background-color:  #ffffffb4;
-    color: #0000007c;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-} */
-
 
 .navbar {
     background-color: #ff9100de;
@@ -96,7 +34,7 @@ html {
     color: #2f3c4f;
 }
 
-/* SECCION I N I C I O */
+/* INICIO */
 .inicio {
     background: linear-gradient(to bottom, rgba(255, 145, 0, 0.9), rgba(255, 145, 0, .9)),
         url(img/fondoWall.png);
@@ -196,40 +134,40 @@ html {
     background-color: #2f3c4f;
 }
 
-.sobremi {
+.aboutMe {
     background-color: #fff;
     color: #111;
     padding: 60px 20px;
 }
 
-.sobremi .contenido-seccion {
+.aboutMe .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
 
-.sobremi h2 {
+.aboutMe h2 {
     font-size: 48px;
     font-family: "Space Mono", Arial, serif;
     text-align: center;
     padding: 20px 0;
 }
 
-.sobremi .personalData ul {
+.aboutMe .personalData ul {
     list-style: none;
 }
 
-.sobremi .personalData ul li {
+.aboutMe .personalData ul li {
     margin: 12px 0;
 }
 
-.sobremi .personalData ul li strong {
+.aboutMe .personalData ul li strong {
     font-family: "Space Mono", Arial, serif;
     display: inline-block;
     color: #4d4d4ddb;
     width: 160px;
 }
 
-.sobremi .personalData ul li .underline {
+.aboutMe .personalData ul li .underline {
     font-family: "Space Mono", Arial, serif;
     color: #fff;
     background-color: #2f3c4f67;
@@ -238,7 +176,7 @@ html {
     border-radius: 5px;
 }
 
-.sobremi .description {
+.aboutMe .description {
     font-family: "Space Mono", Arial, serif;
     color: #4d4d4ddb;
     font-size: 18px;
@@ -246,12 +184,12 @@ html {
     margin-bottom: 20px;
 }
 
-.sobremi .description span {
+.aboutMe .description span {
     color: #2f3c4f;
     font-weight: bold;
 }
 
-.sobremi button {
+.aboutMe button {
     border-radius: 10px;
     cursor: pointer;
     background-color: transparent;
@@ -266,7 +204,7 @@ html {
     z-index: 10;
 }
 
-.sobremi button .overlay {
+.aboutMe button .overlay {
     border-radius: 8px;
     position: absolute;
     top: 0;
@@ -278,42 +216,8 @@ html {
     transition: 1s;
 }
 
-.sobremi button:hover .overlay {
+.aboutMe button:hover .overlay {
     width: 100%;
-}
-
-@media (max-width: 1200px) {
-    .inicio .contenido-banner h1 {
-        margin: 20px 0px;
-        font-size: 35px;
-    }
-
-    .inicio .contenido-banner h1::before {
-        position: absolute;
-        top: 20px;
-        left: 0px;
-        margin-left: 20px;
-    }
-
-    .inicio .contenido-banner h1::after {
-        position: absolute;
-        top: 22px;
-        right: 0;
-        margin-right: 20px;
-    }
-
-    .inicio .contenido-banner span {
-        font-size: 15px;
-    }
-
-    .col-5 {
-        width: 100%;
-    }
-
-    .col-7 {
-        text-align: center;
-        width: 100%;
-    }
 }
 
 
@@ -571,7 +475,7 @@ html {
     }
 }
 
-/* SECCION CURRICULUM */
+/* CURRICULUM */
 .curriculum {
     background-color: rgba(255, 145, 0, 1);
     color: #fff;
@@ -699,7 +603,7 @@ html {
     left: -1px;
 }
 
-/* SECCION PORTFOLIO */
+/* PORTFOLIO */
 .portfolio {
     background-color: #fff;
     color: #111;
@@ -789,7 +693,7 @@ html {
     margin-bottom: 0px;
 }
 
-/* SECCION CONTACTO */
+/* CONTACTO */
 .contacto {
     background-color: rgba(255, 145, 0, 1);
     color: #fff;
@@ -852,27 +756,6 @@ html {
     width: 100%;
 }
 
-
-/* .contacto .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-swidth: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contacto .col .info ul{
-    list-style: none;
-}
-.contacto .col .info ul li{
-    margin-bottom: 20px;
-}
-.contacto .col .info ul li i{
-    color: #1CB698;
-    display: inline-block;
-    margin-right: 20px;
-} */
 footer {
     background-color: #252A2E;
     color: #fff;
@@ -928,14 +811,18 @@ footer .arriba .bi:before {
     font-size: 50px;
 }
 
-/* SECCION RESPONSIVE */
+/* RESPONSIVE */
 
 @media screen and (max-width:700px) {
-    .sobremi .fila {
+    body {
+        min-width: 350px;
+    }
+
+    .aboutMe .fila {
         display: block;
     }
 
-    .sobremi .fila .col {
+    .aboutMe .fila .col {
         width: fit-content;
     }
 
@@ -984,4 +871,38 @@ footer .arriba .bi:before {
         font-size: 18px;
     }
 
+}
+
+@media (max-width: 1200px) {
+    .inicio .contenido-banner h1 {
+        margin: 20px 0px;
+        font-size: 35px;
+    }
+
+    .inicio .contenido-banner h1::before {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        margin-left: 20px;
+    }
+
+    .inicio .contenido-banner h1::after {
+        position: absolute;
+        top: 22px;
+        right: 0;
+        margin-right: 13px;
+    }
+
+    .inicio .contenido-banner span {
+        font-size: 15px;
+    }
+
+    .col-5 {
+        width: 100%;
+    }
+
+    .col-7 {
+        text-align: center;
+        width: 100%;
+    }
 }
