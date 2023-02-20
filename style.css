@@ -283,8 +283,27 @@ html {
 }
 
 @media (max-width: 1200px) {
-    .contenido-banner {
-        margin-top: 20px;
+    .inicio .contenido-banner h1 {
+        margin: 20px 0px;
+        font-size: 35px;
+    }
+
+    .inicio .contenido-banner h1::before {
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        margin-left: 20px;
+    }
+
+    .inicio .contenido-banner h1::after {
+        position: absolute;
+        top: 22px;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .inicio .contenido-banner span {
+        font-size: 15px;
     }
 
     .col-5 {
@@ -295,7 +314,6 @@ html {
         text-align: center;
         width: 100%;
     }
-
 }
 
 
@@ -983,6 +1001,14 @@ footer .arriba .bi:before {
 
     .portfolio .galeria .proyecto img {
         width: 100%;
+    }
+
+    .curriculum .fila .item h4 {
+        font-size: 15px;
+    }
+
+    .curriculum .fila .item .casa {
+        font-size: 18px;
     }
 
 }
