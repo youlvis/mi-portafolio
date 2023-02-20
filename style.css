@@ -252,11 +252,34 @@ html {
 }
 
 .sobremi button {
-    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid rgba(255, 145, 0, 1);
+    width: fit-content;
     display: block;
-    margin: 20px auto;
-    color: black;
+    margin: 5px auto;
+    padding: 10px 22px;
+    font-size: 18px;
+    color: #2f3c4f;
+    position: relative;
+    z-index: 10;
+}
 
+.sobremi button .overlay {
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 145, 0, 1);
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay {
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -633,6 +656,7 @@ html {
     float: right;
     position: relative;
     bottom: 4px;
+    left: 1px;
 }
 
 .curriculum .fila .item .conectord {
@@ -654,6 +678,7 @@ html {
     float: left;
     position: relative;
     bottom: 4px;
+    left: -1px;
 }
 
 /* SECCION PORTFOLIO */
@@ -686,12 +711,14 @@ html {
     height: fit-content;
     margin: 10px;
     cursor: pointer;
+    border: 1px solid rgba(255, 145, 0, 1);
+    border-radius: 10px;
 }
 
 .portfolio .galeria .proyecto img {
     width: 100%;
     display: block;
-    border-radius: 10px;
+    border-radius: 9px;
     height: 245px;
 }
 
@@ -709,7 +736,7 @@ html {
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
-    border-radius: 10px;
+    border-radius: 9px;
 }
 
 .portfolio .galeria .proyecto .overlay h3 {
@@ -728,7 +755,7 @@ html {
     color: #fff;
 }
 
-.bi:before {
+.overlay .bi:before {
     font-size: 50px;
 }
 
@@ -754,7 +781,7 @@ html {
 .contacto .contenido-seccion {
     max-width: 500px;
     margin: auto;
-    padding: 14px;
+    padding: 15px;
 }
 
 .contacto h2 {
@@ -763,12 +790,8 @@ html {
     padding: 20px 0;
 }
 
-.contacto .fila {
-    display: flex;
-}
-
-.contacto .col input,
-.contacto .col textarea {
+.contacto .form input,
+.contacto .form textarea {
     border-radius: 10px;
     display: block;
     width: 100%;
@@ -802,7 +825,7 @@ html {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #1CB698;
+    background-color: #2f3c4f;
     z-index: -1;
     transition: 1s;
 }
@@ -811,9 +834,6 @@ html {
     width: 100%;
 }
 
-.contacto .col img {
-    width: 100%;
-}
 
 /* .contacto .col .info{
     position: absolute;
@@ -857,17 +877,21 @@ footer .redes a {
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+}
+
+footer .redes a:hover {
+    background-color: #feffff;
+    color: rgba(255, 145, 0, 1);
 }
 
 footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #1CB698;
-    color: #fff;
+    background-color: #ffffff;
+    color: #252A2E;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -875,6 +899,15 @@ footer .arriba {
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+
+footer .arriba:hover {
+    background-color: #252A2E;
+    color: #ffffff;
+}
+
+footer .arriba .bi:before {
+    font-size: 50px;
 }
 
 /* SECCION RESPONSIVE */
@@ -952,11 +985,4 @@ footer .arriba {
         width: 100%;
     }
 
-    .contacto .fila {
-        display: block;
-    }
-
-    .contacto .fila .col {
-        width: 100%;
-    }
 }
