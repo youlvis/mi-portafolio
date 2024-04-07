@@ -201,6 +201,7 @@
     font-size: 18px;
     color: #2f3c4f;
     position: relative;
+    overflow: hidden;
     z-index: 10;
 }
 
@@ -213,7 +214,7 @@
     height: 100%;
     background-color: rgba(255, 145, 0, 1);
     z-index: -1;
-    transition: 1s;
+    transition: width 1s ease;
 }
 
 .aboutMe button:hover .overlay {
@@ -321,7 +322,7 @@
     }
 
     100% {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -336,7 +337,7 @@
     }
 
     100% {
-        width: 75%;
+        width: 85%;
     }
 }
 
@@ -351,7 +352,7 @@
     }
 
     100% {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -366,7 +367,7 @@
     }
 
     100% {
-        width: 90%;
+        width: 85%;
     }
 }
 
@@ -381,7 +382,7 @@
     }
 
     100% {
-        width: 60%;
+        width: 70%;
     }
 }
 
@@ -411,7 +412,7 @@
     }
 
     100% {
-        width: 80%;
+        width: 95%;
     }
 }
 
@@ -426,7 +427,7 @@
     }
 
     100% {
-        width: 90%;
+        width: 99%;
     }
 }
 
@@ -456,7 +457,7 @@
     }
 
     100% {
-        width: 95%;
+        width: 99%;
     }
 }
 
@@ -471,7 +472,7 @@
     }
 
     100% {
-        width: 94%;
+        width: 95%;
     }
 }
 
@@ -738,6 +739,7 @@
     color: #fff;
     position: relative;
     z-index: 10;
+    overflow: hidden;
 }
 
 .contacto button .overlay {
@@ -749,7 +751,7 @@
     height: 100%;
     background-color: #2f3c4f;
     z-index: -1;
-    transition: 1s;
+    transition: width 1s ease;
 }
 
 .contacto button:hover .overlay {
