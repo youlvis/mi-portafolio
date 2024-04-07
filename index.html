@@ -335,13 +335,22 @@
                 <input type="text" placeholder="Dirección de correo">
                 <input type="text" placeholder="Tema">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <button>
+                <button onclick="mostrarAlerta()">
                     Enviar Mensaje
                     <span class="overlay"></span>
                 </button>
             </div>
         </div>
     </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <p>Lo sentimos, estamos experimentando problemas técnicos con el servicio de correo. Por favor, inténtalo
+                más tarde.</p>
+        </div>
+    </div>
 
     <!-- footer -->
     <footer>

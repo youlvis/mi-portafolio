@@ -25,4 +25,14 @@ function effectSkills() {
 
 window.onscroll = function () {
     effectSkills();
-} 
+}
+
+function mostrarAlerta() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "block";
+}
+
+function cerrarModal() {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
